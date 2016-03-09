@@ -1,0 +1,16 @@
+{
+  "name": "jade-bootstrap",
+  "version": "1.0.0",
+  "description": "Jade and Bootstrap Try out",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "node-sass": "^3.4.2"
+  }
+}
