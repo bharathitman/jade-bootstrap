@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
 
 //Static Reload
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync', ['sass'], function () {
   browserSync.init({
     server: {
       baseDir: './',
@@ -10,7 +11,12 @@ gulp.task('browser-sync', function () {
     },
   });
   gulp.watch('index.html').on('change', browserSync.reload);
-  gulp.watch('**/*.html').on('change', browserSync.reload);
-  gulp.watch('**/*.css').on('change', browserSync.reload);
-  gulp.watch('**/*.js').on('change', browserSync.reload);
+  gulp.watch('**/*.sass', ['sass']);
+});
+
+gulp.task('sass', function () {
+  return gulp.src('**/*.sass')
+    .pipe(sass())
+    .pipe(gulp.dest(''))
+    .pipe(browserSync.stream());
 });
