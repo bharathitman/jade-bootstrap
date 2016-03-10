@@ -12,8 +12,22 @@ html
       .row
         .col-md-4
           h2 SiteName
-        .col-md-8    
-        
+          
+        ul.col-md-8.list-inline.text-right(style="margin-top: 20px")
+          li
+            a(href=""): .glyphicon.glyphicon-envelope Newsletter
+          li
+            a(href=""): .glyphicon.glyphicon-leaf RSS
+          li |
+          li
+            form.form-inline(role="form")
+              .form-group
+                label.sr-only Email Address
+                input.form-control(type="email", placeholder="Enter Email")
+                button.btn.btn-default(type="submit") Sign Up!
+                
+          
+          
     
         
       
