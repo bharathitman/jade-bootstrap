@@ -1,19 +1,12 @@
+include mixin.jade
+
 article
   h4.small-dark-title A la une
   .lead Suterw <span class="text-muted"> | pelsnf le 03/10/2016 </span>
   h2 Lorem Ipsum Dolor Sit
   p.text-muted Lorem Ipsum dolor sit Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit Lorem Ipsum dolor sit Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lor Lorem Ipsum dolor sit Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit Lorem Ipsum dolor sit Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lor
 
-  .row
-    .col-sm-4
-      .glyphicon.glyphicon-time
-      | 3 Days Ago
-    .col-sm-8
-      .glyphicon.glyphicon-tags
-      strong Tags:
-      a(href="")  lorem ,
-      a(href="")  lorem ,
-      a(href="")  lorem
+  +tagblock
 
 hr 
 
@@ -27,17 +20,8 @@ article
 
   h2 Lorem Ipsum Dolor Sit Amet Molor Colat
   p.text-muted Lorem Ipsum dolor sit Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit Lorem Ipsum dolor sit Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lor Lorem Ipsum dolor sit Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lorem Ipsum dolor sit Lorem Ipsum dolor sit Lorem Ipsum dolor sit  Lorem Ipsum dolor sit  Lor
-      
-    .row
-      .col-sm-4
-        .glyphicon.glyphicon-time
-        | 3 Days Ago
-      .col-sm-8
-        .glyphicon.glyphicon-tags
-        strong Tags:
-        a(href="")  lorem ,
-        a(href="")  lorem ,
-        a(href="")  lorem
+  
+  +tagblock    
         
 hr
   
@@ -47,5 +31,19 @@ article
   
   h2 Mollit anim id est laborum
   
-  p: img(src="http://placehold.it/560x150")
-  p.text-muted lorem whatever dude blah blah site amelasf sfsuewa yetro zvzvsaie ashfsauu 
+  p: img(src="http://placehold.it/560x250")
+  p.text-muted lorem whatever dude blah blah site amelasf sfsuewa yetro zvzvsaie ashfsauu
+  
+  +tagblock
+  
+hr 
+  
+article
+  strong Suteres
+  span.text-muted | publes 12/24/2016
+    
+  h2 Mollit anim id est laborum
+  
+  p.text-muted lorem whatever dude blah blah site amelasf sfsuewa yetro zvzvsaie ashfsauu
+    
+  +tagblock

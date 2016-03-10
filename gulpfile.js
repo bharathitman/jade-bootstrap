@@ -18,7 +18,9 @@ gulp.task('browser-sync', ['sass', 'jade'], function () {
 
 gulp.task('jade', function () {
   return gulp.src('**/*.jade')
-    .pipe(jade())
+    .pipe(jade({
+      pretty: true,
+    }))
     .pipe(gulp.dest(''));
 });
 
