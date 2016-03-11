@@ -1,15 +1,31 @@
-article.bg-grey
-  h4.small-dark-title Interviews
-  .embed-responsive.embed-responsive-16by9
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wzAWI9h3q18" frameborder="0" allowfullscreen></iframe>
-  h2 Well, do ya???
-  p.muted-text lorem ipsum dolor sit amet aabj njasfasfasf nhasfasf nnjasfasf njasff
+
+include mixin
+
+aside
+  article.bg-grey
+    h4.small-dark-title Interviews
+    .embed-responsive.embed-responsive-16by9
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wzAWI9h3q18" frameborder="0" allowfullscreen></iframe>
+    h2 Well, do ya???
+    p.text-muted lorem ipsum dolor sit amet aabj njasfasfasf nhasfasf nnjasfasf njasff
+    
+    .row.text-muted
+      .col-sm-6 leppsfsf 12/12/12
+      .col-sm-6
+        .glyphicon.glyphicon-user
+        | Bharath Bhandarkar
   
-  .row.text-muted
-    .col-sm-6 leppsfsf 12/12/12
-    .col-sm-6
-      .glyphicon.glyphicon-user
-      | Bharath Bhandarkar
+  hr
+        
+  article
+    h4.small-dark-title Agenda
+    
+    +mediaobject('object 1')
+    +mediaobject('object 2')
+    +mediaobject('object 3')
+    +mediaobject('object 4')
+    
+
       
   
   
